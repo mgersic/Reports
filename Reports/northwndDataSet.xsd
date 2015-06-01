@@ -1,0 +1,1220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="northwndDataSet" targetNamespace="http://tempuri.org/northwndDataSet.xsd" xmlns:mstns="http://tempuri.org/northwndDataSet.xsd" xmlns="http://tempuri.org/northwndDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="northwndConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="northwndConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Reports.Properties.Settings.GlobalReference.Default.northwndConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Alphabetical list of productsTableAdapter" GeneratorDataComponentClassName="Alphabetical_list_of_productsTableAdapter" Name="Alphabetical list of products" UserDataComponentName="Alphabetical list of productsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Alphabetical list of products]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ProductID, ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued, CategoryName FROM dbo.[Alphabetical list of products]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProductID" DataSetColumn="ProductID" />
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="SupplierID" DataSetColumn="SupplierID" />
+              <Mapping SourceColumn="CategoryID" DataSetColumn="CategoryID" />
+              <Mapping SourceColumn="QuantityPerUnit" DataSetColumn="QuantityPerUnit" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+              <Mapping SourceColumn="UnitsInStock" DataSetColumn="UnitsInStock" />
+              <Mapping SourceColumn="UnitsOnOrder" DataSetColumn="UnitsOnOrder" />
+              <Mapping SourceColumn="ReorderLevel" DataSetColumn="ReorderLevel" />
+              <Mapping SourceColumn="Discontinued" DataSetColumn="Discontinued" />
+              <Mapping SourceColumn="CategoryName" DataSetColumn="CategoryName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Category Sales for 1997TableAdapter" GeneratorDataComponentClassName="Category_Sales_for_1997TableAdapter" Name="Category Sales for 1997" UserDataComponentName="Category Sales for 1997TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Category Sales for 1997]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CategoryName, CategorySales FROM dbo.[Category Sales for 1997]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CategoryName" DataSetColumn="CategoryName" />
+              <Mapping SourceColumn="CategorySales" DataSetColumn="CategorySales" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Current Product ListTableAdapter" GeneratorDataComponentClassName="Current_Product_ListTableAdapter" Name="Current Product List" UserDataComponentName="Current Product ListTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Current Product List]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ProductID, ProductName FROM dbo.[Current Product List]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProductID" DataSetColumn="ProductID" />
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Customer and Suppliers by CityTableAdapter" GeneratorDataComponentClassName="Customer_and_Suppliers_by_CityTableAdapter" Name="Customer and Suppliers by City" UserDataComponentName="Customer and Suppliers by CityTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Customer and Suppliers by City]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT City, CompanyName, ContactName, Relationship FROM dbo.[Customer and Suppliers by City]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="City" DataSetColumn="City" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+              <Mapping SourceColumn="ContactName" DataSetColumn="ContactName" />
+              <Mapping SourceColumn="Relationship" DataSetColumn="Relationship" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="InvoicesTableAdapter" GeneratorDataComponentClassName="InvoicesTableAdapter" Name="Invoices" UserDataComponentName="InvoicesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.Invoices" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry, CustomerID, CustomerName, Address, City, Region, PostalCode, Country, Salesperson, OrderID, OrderDate, RequiredDate, ShippedDate, ShipperName, ProductID, ProductName, UnitPrice, Quantity, Discount, ExtendedPrice, Freight FROM dbo.Invoices</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ShipName" DataSetColumn="ShipName" />
+              <Mapping SourceColumn="ShipAddress" DataSetColumn="ShipAddress" />
+              <Mapping SourceColumn="ShipCity" DataSetColumn="ShipCity" />
+              <Mapping SourceColumn="ShipRegion" DataSetColumn="ShipRegion" />
+              <Mapping SourceColumn="ShipPostalCode" DataSetColumn="ShipPostalCode" />
+              <Mapping SourceColumn="ShipCountry" DataSetColumn="ShipCountry" />
+              <Mapping SourceColumn="CustomerID" DataSetColumn="CustomerID" />
+              <Mapping SourceColumn="CustomerName" DataSetColumn="CustomerName" />
+              <Mapping SourceColumn="Address" DataSetColumn="Address" />
+              <Mapping SourceColumn="City" DataSetColumn="City" />
+              <Mapping SourceColumn="Region" DataSetColumn="Region" />
+              <Mapping SourceColumn="PostalCode" DataSetColumn="PostalCode" />
+              <Mapping SourceColumn="Country" DataSetColumn="Country" />
+              <Mapping SourceColumn="Salesperson" DataSetColumn="Salesperson" />
+              <Mapping SourceColumn="OrderID" DataSetColumn="OrderID" />
+              <Mapping SourceColumn="OrderDate" DataSetColumn="OrderDate" />
+              <Mapping SourceColumn="RequiredDate" DataSetColumn="RequiredDate" />
+              <Mapping SourceColumn="ShippedDate" DataSetColumn="ShippedDate" />
+              <Mapping SourceColumn="ShipperName" DataSetColumn="ShipperName" />
+              <Mapping SourceColumn="ProductID" DataSetColumn="ProductID" />
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="Discount" DataSetColumn="Discount" />
+              <Mapping SourceColumn="ExtendedPrice" DataSetColumn="ExtendedPrice" />
+              <Mapping SourceColumn="Freight" DataSetColumn="Freight" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Order Details ExtendedTableAdapter" GeneratorDataComponentClassName="Order_Details_ExtendedTableAdapter" Name="Order Details Extended" UserDataComponentName="Order Details ExtendedTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Order Details Extended]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT OrderID, ProductID, ProductName, UnitPrice, Quantity, Discount, ExtendedPrice FROM dbo.[Order Details Extended]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OrderID" DataSetColumn="OrderID" />
+              <Mapping SourceColumn="ProductID" DataSetColumn="ProductID" />
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="Discount" DataSetColumn="Discount" />
+              <Mapping SourceColumn="ExtendedPrice" DataSetColumn="ExtendedPrice" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Order SubtotalsTableAdapter" GeneratorDataComponentClassName="Order_SubtotalsTableAdapter" Name="Order Subtotals" UserDataComponentName="Order SubtotalsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Order Subtotals]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT OrderID, Subtotal FROM dbo.[Order Subtotals]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OrderID" DataSetColumn="OrderID" />
+              <Mapping SourceColumn="Subtotal" DataSetColumn="Subtotal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Orders QryTableAdapter" GeneratorDataComponentClassName="Orders_QryTableAdapter" Name="Orders Qry" UserDataComponentName="Orders QryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Orders Qry]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry, CompanyName, Address, City, Region, PostalCode, Country FROM dbo.[Orders Qry]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OrderID" DataSetColumn="OrderID" />
+              <Mapping SourceColumn="CustomerID" DataSetColumn="CustomerID" />
+              <Mapping SourceColumn="EmployeeID" DataSetColumn="EmployeeID" />
+              <Mapping SourceColumn="OrderDate" DataSetColumn="OrderDate" />
+              <Mapping SourceColumn="RequiredDate" DataSetColumn="RequiredDate" />
+              <Mapping SourceColumn="ShippedDate" DataSetColumn="ShippedDate" />
+              <Mapping SourceColumn="ShipVia" DataSetColumn="ShipVia" />
+              <Mapping SourceColumn="Freight" DataSetColumn="Freight" />
+              <Mapping SourceColumn="ShipName" DataSetColumn="ShipName" />
+              <Mapping SourceColumn="ShipAddress" DataSetColumn="ShipAddress" />
+              <Mapping SourceColumn="ShipCity" DataSetColumn="ShipCity" />
+              <Mapping SourceColumn="ShipRegion" DataSetColumn="ShipRegion" />
+              <Mapping SourceColumn="ShipPostalCode" DataSetColumn="ShipPostalCode" />
+              <Mapping SourceColumn="ShipCountry" DataSetColumn="ShipCountry" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+              <Mapping SourceColumn="Address" DataSetColumn="Address" />
+              <Mapping SourceColumn="City" DataSetColumn="City" />
+              <Mapping SourceColumn="Region" DataSetColumn="Region" />
+              <Mapping SourceColumn="PostalCode" DataSetColumn="PostalCode" />
+              <Mapping SourceColumn="Country" DataSetColumn="Country" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Product Sales for 1997TableAdapter" GeneratorDataComponentClassName="Product_Sales_for_1997TableAdapter" Name="Product Sales for 1997" UserDataComponentName="Product Sales for 1997TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Product Sales for 1997]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CategoryName, ProductName, ProductSales FROM dbo.[Product Sales for 1997]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CategoryName" DataSetColumn="CategoryName" />
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="ProductSales" DataSetColumn="ProductSales" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Products Above Average PriceTableAdapter" GeneratorDataComponentClassName="Products_Above_Average_PriceTableAdapter" Name="Products Above Average Price" UserDataComponentName="Products Above Average PriceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Products Above Average Price]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ProductName, UnitPrice FROM dbo.[Products Above Average Price]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Products by CategoryTableAdapter" GeneratorDataComponentClassName="Products_by_CategoryTableAdapter" Name="Products by Category" UserDataComponentName="Products by CategoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Products by Category]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CategoryName, ProductName, QuantityPerUnit, UnitsInStock, Discontinued FROM dbo.[Products by Category]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CategoryName" DataSetColumn="CategoryName" />
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="QuantityPerUnit" DataSetColumn="QuantityPerUnit" />
+              <Mapping SourceColumn="UnitsInStock" DataSetColumn="UnitsInStock" />
+              <Mapping SourceColumn="Discontinued" DataSetColumn="Discontinued" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Quarterly OrdersTableAdapter" GeneratorDataComponentClassName="Quarterly_OrdersTableAdapter" Name="Quarterly Orders" UserDataComponentName="Quarterly OrdersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Quarterly Orders]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CustomerID, CompanyName, City, Country FROM dbo.[Quarterly Orders]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CustomerID" DataSetColumn="CustomerID" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+              <Mapping SourceColumn="City" DataSetColumn="City" />
+              <Mapping SourceColumn="Country" DataSetColumn="Country" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Sales by CategoryTableAdapter" GeneratorDataComponentClassName="Sales_by_CategoryTableAdapter" Name="Sales by Category" UserDataComponentName="Sales by CategoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Sales by Category]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CategoryID, CategoryName, ProductName, ProductSales FROM dbo.[Sales by Category]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CategoryID" DataSetColumn="CategoryID" />
+              <Mapping SourceColumn="CategoryName" DataSetColumn="CategoryName" />
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="ProductSales" DataSetColumn="ProductSales" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Sales Totals by AmountTableAdapter" GeneratorDataComponentClassName="Sales_Totals_by_AmountTableAdapter" Name="Sales Totals by Amount" UserDataComponentName="Sales Totals by AmountTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Sales Totals by Amount]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SaleAmount, OrderID, CompanyName, ShippedDate FROM dbo.[Sales Totals by Amount]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SaleAmount" DataSetColumn="SaleAmount" />
+              <Mapping SourceColumn="OrderID" DataSetColumn="OrderID" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+              <Mapping SourceColumn="ShippedDate" DataSetColumn="ShippedDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Summary of Sales by QuarterTableAdapter" GeneratorDataComponentClassName="Summary_of_Sales_by_QuarterTableAdapter" Name="Summary of Sales by Quarter" UserDataComponentName="Summary of Sales by QuarterTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Summary of Sales by Quarter]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ShippedDate, OrderID, Subtotal FROM dbo.[Summary of Sales by Quarter]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ShippedDate" DataSetColumn="ShippedDate" />
+              <Mapping SourceColumn="OrderID" DataSetColumn="OrderID" />
+              <Mapping SourceColumn="Subtotal" DataSetColumn="Subtotal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Summary of Sales by YearTableAdapter" GeneratorDataComponentClassName="Summary_of_Sales_by_YearTableAdapter" Name="Summary of Sales by Year" UserDataComponentName="Summary of Sales by YearTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Summary of Sales by Year]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ShippedDate, OrderID, Subtotal FROM dbo.[Summary of Sales by Year]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ShippedDate" DataSetColumn="ShippedDate" />
+              <Mapping SourceColumn="OrderID" DataSetColumn="OrderID" />
+              <Mapping SourceColumn="Subtotal" DataSetColumn="Subtotal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Order DetailsTableAdapter" GeneratorDataComponentClassName="Order_DetailsTableAdapter" Name="Order Details" UserDataComponentName="Order DetailsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Order Details]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Order Details] WHERE (([OrderID] = @Original_OrderID) AND ([ProductID] = @Original_ProductID) AND ([UnitPrice] = @Original_UnitPrice) AND ([Quantity] = @Original_Quantity) AND ([Discount] = @Original_Discount))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_OrderID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OrderID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ProductID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ProductID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_UnitPrice" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="UnitPrice" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_Quantity" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="Quantity" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="@Original_Discount" Precision="0" ProviderType="Real" Scale="0" Size="0" SourceColumn="Discount" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Order Details] ([OrderID], [ProductID], [UnitPrice], [Quantity], [Discount]) VALUES (@OrderID, @ProductID, @UnitPrice, @Quantity, @Discount);
+SELECT OrderID, ProductID, UnitPrice, Quantity, Discount FROM [Order Details] WHERE (OrderID = @OrderID) AND (ProductID = @ProductID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@OrderID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OrderID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ProductID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ProductID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@UnitPrice" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="UnitPrice" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Quantity" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="Quantity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="@Discount" Precision="0" ProviderType="Real" Scale="0" Size="0" SourceColumn="Discount" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT OrderID, ProductID, UnitPrice, Quantity, Discount FROM dbo.[Order Details]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Order Details] SET [OrderID] = @OrderID, [ProductID] = @ProductID, [UnitPrice] = @UnitPrice, [Quantity] = @Quantity, [Discount] = @Discount WHERE (([OrderID] = @Original_OrderID) AND ([ProductID] = @Original_ProductID) AND ([UnitPrice] = @Original_UnitPrice) AND ([Quantity] = @Original_Quantity) AND ([Discount] = @Original_Discount));
+SELECT OrderID, ProductID, UnitPrice, Quantity, Discount FROM [Order Details] WHERE (OrderID = @OrderID) AND (ProductID = @ProductID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@OrderID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OrderID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ProductID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ProductID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@UnitPrice" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="UnitPrice" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Quantity" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="Quantity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="@Discount" Precision="0" ProviderType="Real" Scale="0" Size="0" SourceColumn="Discount" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_OrderID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OrderID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ProductID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ProductID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_UnitPrice" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="UnitPrice" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_Quantity" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="Quantity" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Single" Direction="Input" ParameterName="@Original_Discount" Precision="0" ProviderType="Real" Scale="0" Size="0" SourceColumn="Discount" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OrderID" DataSetColumn="OrderID" />
+              <Mapping SourceColumn="ProductID" DataSetColumn="ProductID" />
+              <Mapping SourceColumn="UnitPrice" DataSetColumn="UnitPrice" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="Discount" DataSetColumn="Discount" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.[Order Details]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByOrderId" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByOrderID" GeneratorSourceName="FillByOrderId" GetMethodModifier="Public" GetMethodName="GetDataByOrderID" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByOrderID" UserSourceName="FillByOrderId">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        OrderID, ProductID, UnitPrice, Quantity, Discount
+FROM            [Order Details]
+WHERE        (OrderID = @OrderID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="OrderID" ColumnName="OrderID" DataSourceName="[C:\USERS\IVAN\DESKTOP\2.5 - ERA ADO.NET\NORTHWND\NORTHWND.MDF].dbo.[Order Details]" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@OrderID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="OrderID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OrdersTableAdapter" GeneratorDataComponentClassName="OrdersTableAdapter" Name="Orders" UserDataComponentName="OrdersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.Orders" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Orders] WHERE (([OrderID] = @Original_OrderID) AND ((@IsNull_CustomerID = 1 AND [CustomerID] IS NULL) OR ([CustomerID] = @Original_CustomerID)) AND ((@IsNull_EmployeeID = 1 AND [EmployeeID] IS NULL) OR ([EmployeeID] = @Original_EmployeeID)) AND ((@IsNull_OrderDate = 1 AND [OrderDate] IS NULL) OR ([OrderDate] = @Original_OrderDate)) AND ((@IsNull_RequiredDate = 1 AND [RequiredDate] IS NULL) OR ([RequiredDate] = @Original_RequiredDate)) AND ((@IsNull_ShippedDate = 1 AND [ShippedDate] IS NULL) OR ([ShippedDate] = @Original_ShippedDate)) AND ((@IsNull_ShipVia = 1 AND [ShipVia] IS NULL) OR ([ShipVia] = @Original_ShipVia)) AND ((@IsNull_Freight = 1 AND [Freight] IS NULL) OR ([Freight] = @Original_Freight)) AND ((@IsNull_ShipName = 1 AND [ShipName] IS NULL) OR ([ShipName] = @Original_ShipName)) AND ((@IsNull_ShipAddress = 1 AND [ShipAddress] IS NULL) OR ([ShipAddress] = @Original_ShipAddress)) AND ((@IsNull_ShipCity = 1 AND [ShipCity] IS NULL) OR ([ShipCity] = @Original_ShipCity)) AND ((@IsNull_ShipRegion = 1 AND [ShipRegion] IS NULL) OR ([ShipRegion] = @Original_ShipRegion)) AND ((@IsNull_ShipPostalCode = 1 AND [ShipPostalCode] IS NULL) OR ([ShipPostalCode] = @Original_ShipPostalCode)) AND ((@IsNull_ShipCountry = 1 AND [ShipCountry] IS NULL) OR ([ShipCountry] = @Original_ShipCountry)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_OrderID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OrderID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CustomerID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CustomerID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_CustomerID" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="CustomerID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmployeeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmployeeID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmployeeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmployeeID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OrderDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OrderDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_OrderDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="OrderDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_RequiredDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RequiredDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_RequiredDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="RequiredDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShippedDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShippedDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_ShippedDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShippedDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShipVia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipVia" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ShipVia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipVia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Freight" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Freight" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Freight" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Freight" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShipName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ShipName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShipAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ShipAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShipCity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipCity" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ShipCity" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipCity" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShipRegion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipRegion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ShipRegion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipRegion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShipPostalCode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipPostalCode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ShipPostalCode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipPostalCode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShipCountry" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipCountry" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ShipCountry" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipCountry" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Orders] ([CustomerID], [EmployeeID], [OrderDate], [RequiredDate], [ShippedDate], [ShipVia], [Freight], [ShipName], [ShipAddress], [ShipCity], [ShipRegion], [ShipPostalCode], [ShipCountry]) VALUES (@CustomerID, @EmployeeID, @OrderDate, @RequiredDate, @ShippedDate, @ShipVia, @Freight, @ShipName, @ShipAddress, @ShipCity, @ShipRegion, @ShipPostalCode, @ShipCountry);
+SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry FROM Orders WHERE (OrderID = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@CustomerID" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="CustomerID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmployeeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmployeeID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@OrderDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="OrderDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@RequiredDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="RequiredDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@ShippedDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShippedDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ShipVia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipVia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Freight" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Freight" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ShipName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ShipAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ShipCity" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipCity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ShipRegion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipRegion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ShipPostalCode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipPostalCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ShipCountry" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipCountry" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry FROM dbo.Orders</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Orders] SET [CustomerID] = @CustomerID, [EmployeeID] = @EmployeeID, [OrderDate] = @OrderDate, [RequiredDate] = @RequiredDate, [ShippedDate] = @ShippedDate, [ShipVia] = @ShipVia, [Freight] = @Freight, [ShipName] = @ShipName, [ShipAddress] = @ShipAddress, [ShipCity] = @ShipCity, [ShipRegion] = @ShipRegion, [ShipPostalCode] = @ShipPostalCode, [ShipCountry] = @ShipCountry WHERE (([OrderID] = @Original_OrderID) AND ((@IsNull_CustomerID = 1 AND [CustomerID] IS NULL) OR ([CustomerID] = @Original_CustomerID)) AND ((@IsNull_EmployeeID = 1 AND [EmployeeID] IS NULL) OR ([EmployeeID] = @Original_EmployeeID)) AND ((@IsNull_OrderDate = 1 AND [OrderDate] IS NULL) OR ([OrderDate] = @Original_OrderDate)) AND ((@IsNull_RequiredDate = 1 AND [RequiredDate] IS NULL) OR ([RequiredDate] = @Original_RequiredDate)) AND ((@IsNull_ShippedDate = 1 AND [ShippedDate] IS NULL) OR ([ShippedDate] = @Original_ShippedDate)) AND ((@IsNull_ShipVia = 1 AND [ShipVia] IS NULL) OR ([ShipVia] = @Original_ShipVia)) AND ((@IsNull_Freight = 1 AND [Freight] IS NULL) OR ([Freight] = @Original_Freight)) AND ((@IsNull_ShipName = 1 AND [ShipName] IS NULL) OR ([ShipName] = @Original_ShipName)) AND ((@IsNull_ShipAddress = 1 AND [ShipAddress] IS NULL) OR ([ShipAddress] = @Original_ShipAddress)) AND ((@IsNull_ShipCity = 1 AND [ShipCity] IS NULL) OR ([ShipCity] = @Original_ShipCity)) AND ((@IsNull_ShipRegion = 1 AND [ShipRegion] IS NULL) OR ([ShipRegion] = @Original_ShipRegion)) AND ((@IsNull_ShipPostalCode = 1 AND [ShipPostalCode] IS NULL) OR ([ShipPostalCode] = @Original_ShipPostalCode)) AND ((@IsNull_ShipCountry = 1 AND [ShipCountry] IS NULL) OR ([ShipCountry] = @Original_ShipCountry)));
+SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry FROM Orders WHERE (OrderID = @OrderID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@CustomerID" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="CustomerID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@EmployeeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmployeeID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@OrderDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="OrderDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@RequiredDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="RequiredDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@ShippedDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShippedDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ShipVia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipVia" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Freight" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Freight" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ShipName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ShipAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ShipCity" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipCity" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ShipRegion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipRegion" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ShipPostalCode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipPostalCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ShipCountry" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipCountry" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_OrderID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OrderID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CustomerID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CustomerID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_CustomerID" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="CustomerID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EmployeeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmployeeID" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_EmployeeID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EmployeeID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_OrderDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="OrderDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_OrderDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="OrderDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_RequiredDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RequiredDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_RequiredDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="RequiredDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShippedDate" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShippedDate" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_ShippedDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="ShippedDate" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShipVia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipVia" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ShipVia" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipVia" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Freight" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Freight" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@Original_Freight" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="Freight" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShipName" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipName" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ShipName" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShipAddress" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipAddress" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ShipAddress" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipAddress" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShipCity" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipCity" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ShipCity" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipCity" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShipRegion" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipRegion" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ShipRegion" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipRegion" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShipPostalCode" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipPostalCode" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ShipPostalCode" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipPostalCode" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ShipCountry" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ShipCountry" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_ShipCountry" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ShipCountry" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="OrderID" ColumnName="OrderID" DataSourceName="[C:\USERS\IVAN\DESKTOP\2.5 - ERA ADO.NET\NORTHWND\NORTHWND.MDF].dbo.Orders" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@OrderID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="OrderID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OrderID" DataSetColumn="OrderID" />
+              <Mapping SourceColumn="CustomerID" DataSetColumn="CustomerID" />
+              <Mapping SourceColumn="EmployeeID" DataSetColumn="EmployeeID" />
+              <Mapping SourceColumn="OrderDate" DataSetColumn="OrderDate" />
+              <Mapping SourceColumn="RequiredDate" DataSetColumn="RequiredDate" />
+              <Mapping SourceColumn="ShippedDate" DataSetColumn="ShippedDate" />
+              <Mapping SourceColumn="ShipVia" DataSetColumn="ShipVia" />
+              <Mapping SourceColumn="Freight" DataSetColumn="Freight" />
+              <Mapping SourceColumn="ShipName" DataSetColumn="ShipName" />
+              <Mapping SourceColumn="ShipAddress" DataSetColumn="ShipAddress" />
+              <Mapping SourceColumn="ShipCity" DataSetColumn="ShipCity" />
+              <Mapping SourceColumn="ShipRegion" DataSetColumn="ShipRegion" />
+              <Mapping SourceColumn="ShipPostalCode" DataSetColumn="ShipPostalCode" />
+              <Mapping SourceColumn="ShipCountry" DataSetColumn="ShipCountry" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="northwndConnectionString (Settings)" DbObjectName="dbo.Orders" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByOrderId" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByOrderId" GeneratorSourceName="FillByOrderId" GetMethodModifier="Public" GetMethodName="GetDataByOrderId" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByOrderId" UserSourceName="FillByOrderId">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, 
+                         ShipCountry
+FROM            Orders
+WHERE        (OrderID = @OrderID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="OrderID" ColumnName="OrderID" DataSourceName="[C:\USERS\IVAN\DESKTOP\2.5 - ERA ADO.NET\NORTHWND\NORTHWND.MDF].dbo.Orders" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@OrderID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="OrderID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="northwndDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="northwndDataSet" msprop:Generator_UserDSName="northwndDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Alphabetical_x0020_list_x0020_of_x0020_products" msprop:Generator_TableClassName="Alphabetical_list_of_productsDataTable" msprop:Generator_TableVarName="tableAlphabetical_list_of_products" msprop:Generator_RowChangedName="Alphabetical_list_of_productsRowChanged" msprop:Generator_TablePropName="Alphabetical_list_of_products" msprop:Generator_RowDeletingName="Alphabetical_list_of_productsRowDeleting" msprop:Generator_RowChangingName="Alphabetical_list_of_productsRowChanging" msprop:Generator_RowEvHandlerName="Alphabetical_list_of_productsRowChangeEventHandler" msprop:Generator_RowDeletedName="Alphabetical_list_of_productsRowDeleted" msprop:Generator_RowClassName="Alphabetical_list_of_productsRow" msprop:Generator_UserTableName="Alphabetical list of products" msprop:Generator_RowEvArgName="Alphabetical_list_of_productsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductID" msprop:Generator_ColumnVarNameInTable="columnProductID" msprop:Generator_ColumnPropNameInRow="ProductID" msprop:Generator_ColumnPropNameInTable="ProductIDColumn" msprop:Generator_UserColumnName="ProductID" type="xs:int" />
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SupplierID" msprop:Generator_ColumnVarNameInTable="columnSupplierID" msprop:Generator_ColumnPropNameInRow="SupplierID" msprop:Generator_ColumnPropNameInTable="SupplierIDColumn" msprop:Generator_UserColumnName="SupplierID" type="xs:int" minOccurs="0" />
+              <xs:element name="CategoryID" msprop:Generator_ColumnVarNameInTable="columnCategoryID" msprop:Generator_ColumnPropNameInRow="CategoryID" msprop:Generator_ColumnPropNameInTable="CategoryIDColumn" msprop:Generator_UserColumnName="CategoryID" type="xs:int" minOccurs="0" />
+              <xs:element name="QuantityPerUnit" msprop:Generator_ColumnVarNameInTable="columnQuantityPerUnit" msprop:Generator_ColumnPropNameInRow="QuantityPerUnit" msprop:Generator_ColumnPropNameInTable="QuantityPerUnitColumn" msprop:Generator_UserColumnName="QuantityPerUnit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" msprop:Generator_UserColumnName="UnitPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UnitsInStock" msprop:Generator_ColumnVarNameInTable="columnUnitsInStock" msprop:Generator_ColumnPropNameInRow="UnitsInStock" msprop:Generator_ColumnPropNameInTable="UnitsInStockColumn" msprop:Generator_UserColumnName="UnitsInStock" type="xs:short" minOccurs="0" />
+              <xs:element name="UnitsOnOrder" msprop:Generator_ColumnVarNameInTable="columnUnitsOnOrder" msprop:Generator_ColumnPropNameInRow="UnitsOnOrder" msprop:Generator_ColumnPropNameInTable="UnitsOnOrderColumn" msprop:Generator_UserColumnName="UnitsOnOrder" type="xs:short" minOccurs="0" />
+              <xs:element name="ReorderLevel" msprop:Generator_ColumnVarNameInTable="columnReorderLevel" msprop:Generator_ColumnPropNameInRow="ReorderLevel" msprop:Generator_ColumnPropNameInTable="ReorderLevelColumn" msprop:Generator_UserColumnName="ReorderLevel" type="xs:short" minOccurs="0" />
+              <xs:element name="Discontinued" msprop:Generator_ColumnVarNameInTable="columnDiscontinued" msprop:Generator_ColumnPropNameInRow="Discontinued" msprop:Generator_ColumnPropNameInTable="DiscontinuedColumn" msprop:Generator_UserColumnName="Discontinued" type="xs:boolean" />
+              <xs:element name="CategoryName" msprop:Generator_ColumnVarNameInTable="columnCategoryName" msprop:Generator_ColumnPropNameInRow="CategoryName" msprop:Generator_ColumnPropNameInTable="CategoryNameColumn" msprop:Generator_UserColumnName="CategoryName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Category_x0020_Sales_x0020_for_x0020_1997" msprop:Generator_TableClassName="Category_Sales_for_1997DataTable" msprop:Generator_TableVarName="tableCategory_Sales_for_1997" msprop:Generator_RowChangedName="Category_Sales_for_1997RowChanged" msprop:Generator_TablePropName="Category_Sales_for_1997" msprop:Generator_RowDeletingName="Category_Sales_for_1997RowDeleting" msprop:Generator_RowChangingName="Category_Sales_for_1997RowChanging" msprop:Generator_RowEvHandlerName="Category_Sales_for_1997RowChangeEventHandler" msprop:Generator_RowDeletedName="Category_Sales_for_1997RowDeleted" msprop:Generator_RowClassName="Category_Sales_for_1997Row" msprop:Generator_UserTableName="Category Sales for 1997" msprop:Generator_RowEvArgName="Category_Sales_for_1997RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CategoryName" msprop:Generator_ColumnVarNameInTable="columnCategoryName" msprop:Generator_ColumnPropNameInRow="CategoryName" msprop:Generator_ColumnPropNameInTable="CategoryNameColumn" msprop:Generator_UserColumnName="CategoryName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CategorySales" msprop:Generator_ColumnVarNameInTable="columnCategorySales" msprop:Generator_ColumnPropNameInRow="CategorySales" msprop:Generator_ColumnPropNameInTable="CategorySalesColumn" msprop:Generator_UserColumnName="CategorySales" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Current_x0020_Product_x0020_List" msprop:Generator_TableClassName="Current_Product_ListDataTable" msprop:Generator_TableVarName="tableCurrent_Product_List" msprop:Generator_RowChangedName="Current_Product_ListRowChanged" msprop:Generator_TablePropName="Current_Product_List" msprop:Generator_RowDeletingName="Current_Product_ListRowDeleting" msprop:Generator_RowChangingName="Current_Product_ListRowChanging" msprop:Generator_RowEvHandlerName="Current_Product_ListRowChangeEventHandler" msprop:Generator_RowDeletedName="Current_Product_ListRowDeleted" msprop:Generator_RowClassName="Current_Product_ListRow" msprop:Generator_UserTableName="Current Product List" msprop:Generator_RowEvArgName="Current_Product_ListRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnProductID" msprop:Generator_ColumnPropNameInRow="ProductID" msprop:Generator_ColumnPropNameInTable="ProductIDColumn" msprop:Generator_UserColumnName="ProductID" type="xs:int" />
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Customer_x0020_and_x0020_Suppliers_x0020_by_x0020_City" msprop:Generator_TableClassName="Customer_and_Suppliers_by_CityDataTable" msprop:Generator_TableVarName="tableCustomer_and_Suppliers_by_City" msprop:Generator_RowChangedName="Customer_and_Suppliers_by_CityRowChanged" msprop:Generator_TablePropName="Customer_and_Suppliers_by_City" msprop:Generator_RowDeletingName="Customer_and_Suppliers_by_CityRowDeleting" msprop:Generator_RowChangingName="Customer_and_Suppliers_by_CityRowChanging" msprop:Generator_RowEvHandlerName="Customer_and_Suppliers_by_CityRowChangeEventHandler" msprop:Generator_RowDeletedName="Customer_and_Suppliers_by_CityRowDeleted" msprop:Generator_RowClassName="Customer_and_Suppliers_by_CityRow" msprop:Generator_UserTableName="Customer and Suppliers by City" msprop:Generator_RowEvArgName="Customer_and_Suppliers_by_CityRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_UserColumnName="City" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactName" msprop:Generator_ColumnVarNameInTable="columnContactName" msprop:Generator_ColumnPropNameInRow="ContactName" msprop:Generator_ColumnPropNameInTable="ContactNameColumn" msprop:Generator_UserColumnName="ContactName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Relationship" msprop:Generator_ColumnVarNameInTable="columnRelationship" msprop:Generator_ColumnPropNameInRow="Relationship" msprop:Generator_ColumnPropNameInTable="RelationshipColumn" msprop:Generator_UserColumnName="Relationship">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Invoices" msprop:Generator_TableClassName="InvoicesDataTable" msprop:Generator_TableVarName="tableInvoices" msprop:Generator_RowChangedName="InvoicesRowChanged" msprop:Generator_TablePropName="Invoices" msprop:Generator_RowDeletingName="InvoicesRowDeleting" msprop:Generator_RowChangingName="InvoicesRowChanging" msprop:Generator_RowEvHandlerName="InvoicesRowChangeEventHandler" msprop:Generator_RowDeletedName="InvoicesRowDeleted" msprop:Generator_RowClassName="InvoicesRow" msprop:Generator_UserTableName="Invoices" msprop:Generator_RowEvArgName="InvoicesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ShipName" msprop:Generator_ColumnVarNameInTable="columnShipName" msprop:Generator_ColumnPropNameInRow="ShipName" msprop:Generator_ColumnPropNameInTable="ShipNameColumn" msprop:Generator_UserColumnName="ShipName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipAddress" msprop:Generator_ColumnVarNameInTable="columnShipAddress" msprop:Generator_ColumnPropNameInRow="ShipAddress" msprop:Generator_ColumnPropNameInTable="ShipAddressColumn" msprop:Generator_UserColumnName="ShipAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipCity" msprop:Generator_ColumnVarNameInTable="columnShipCity" msprop:Generator_ColumnPropNameInRow="ShipCity" msprop:Generator_ColumnPropNameInTable="ShipCityColumn" msprop:Generator_UserColumnName="ShipCity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipRegion" msprop:Generator_ColumnVarNameInTable="columnShipRegion" msprop:Generator_ColumnPropNameInRow="ShipRegion" msprop:Generator_ColumnPropNameInTable="ShipRegionColumn" msprop:Generator_UserColumnName="ShipRegion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipPostalCode" msprop:Generator_ColumnVarNameInTable="columnShipPostalCode" msprop:Generator_ColumnPropNameInRow="ShipPostalCode" msprop:Generator_ColumnPropNameInTable="ShipPostalCodeColumn" msprop:Generator_UserColumnName="ShipPostalCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipCountry" msprop:Generator_ColumnVarNameInTable="columnShipCountry" msprop:Generator_ColumnPropNameInRow="ShipCountry" msprop:Generator_ColumnPropNameInTable="ShipCountryColumn" msprop:Generator_UserColumnName="ShipCountry" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustomerID" msprop:Generator_ColumnVarNameInTable="columnCustomerID" msprop:Generator_ColumnPropNameInRow="CustomerID" msprop:Generator_ColumnPropNameInTable="CustomerIDColumn" msprop:Generator_UserColumnName="CustomerID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_UserColumnName="CustomerName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_UserColumnName="City" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Region" msprop:Generator_ColumnVarNameInTable="columnRegion" msprop:Generator_ColumnPropNameInRow="Region" msprop:Generator_ColumnPropNameInTable="RegionColumn" msprop:Generator_UserColumnName="Region" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PostalCode" msprop:Generator_ColumnVarNameInTable="columnPostalCode" msprop:Generator_ColumnPropNameInRow="PostalCode" msprop:Generator_ColumnPropNameInTable="PostalCodeColumn" msprop:Generator_UserColumnName="PostalCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_UserColumnName="Country" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Salesperson" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSalesperson" msprop:Generator_ColumnPropNameInRow="Salesperson" msprop:Generator_ColumnPropNameInTable="SalespersonColumn" msprop:Generator_UserColumnName="Salesperson" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="31" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrderID" msprop:Generator_ColumnVarNameInTable="columnOrderID" msprop:Generator_ColumnPropNameInRow="OrderID" msprop:Generator_ColumnPropNameInTable="OrderIDColumn" msprop:Generator_UserColumnName="OrderID" type="xs:int" />
+              <xs:element name="OrderDate" msprop:Generator_ColumnVarNameInTable="columnOrderDate" msprop:Generator_ColumnPropNameInRow="OrderDate" msprop:Generator_ColumnPropNameInTable="OrderDateColumn" msprop:Generator_UserColumnName="OrderDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RequiredDate" msprop:Generator_ColumnVarNameInTable="columnRequiredDate" msprop:Generator_ColumnPropNameInRow="RequiredDate" msprop:Generator_ColumnPropNameInTable="RequiredDateColumn" msprop:Generator_UserColumnName="RequiredDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ShippedDate" msprop:Generator_ColumnVarNameInTable="columnShippedDate" msprop:Generator_ColumnPropNameInRow="ShippedDate" msprop:Generator_ColumnPropNameInTable="ShippedDateColumn" msprop:Generator_UserColumnName="ShippedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ShipperName" msprop:Generator_ColumnVarNameInTable="columnShipperName" msprop:Generator_ColumnPropNameInRow="ShipperName" msprop:Generator_ColumnPropNameInTable="ShipperNameColumn" msprop:Generator_UserColumnName="ShipperName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductID" msprop:Generator_ColumnVarNameInTable="columnProductID" msprop:Generator_ColumnPropNameInRow="ProductID" msprop:Generator_ColumnPropNameInTable="ProductIDColumn" msprop:Generator_UserColumnName="ProductID" type="xs:int" />
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" msprop:Generator_UserColumnName="UnitPrice" type="xs:decimal" />
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:short" />
+              <xs:element name="Discount" msprop:Generator_ColumnVarNameInTable="columnDiscount" msprop:Generator_ColumnPropNameInRow="Discount" msprop:Generator_ColumnPropNameInTable="DiscountColumn" msprop:Generator_UserColumnName="Discount" type="xs:float" />
+              <xs:element name="ExtendedPrice" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExtendedPrice" msprop:Generator_ColumnPropNameInRow="ExtendedPrice" msprop:Generator_ColumnPropNameInTable="ExtendedPriceColumn" msprop:Generator_UserColumnName="ExtendedPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Freight" msprop:Generator_ColumnVarNameInTable="columnFreight" msprop:Generator_ColumnPropNameInRow="Freight" msprop:Generator_ColumnPropNameInTable="FreightColumn" msprop:Generator_UserColumnName="Freight" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Order_x0020_Details_x0020_Extended" msprop:Generator_TableClassName="Order_Details_ExtendedDataTable" msprop:Generator_TableVarName="tableOrder_Details_Extended" msprop:Generator_RowChangedName="Order_Details_ExtendedRowChanged" msprop:Generator_TablePropName="Order_Details_Extended" msprop:Generator_RowDeletingName="Order_Details_ExtendedRowDeleting" msprop:Generator_RowChangingName="Order_Details_ExtendedRowChanging" msprop:Generator_RowEvHandlerName="Order_Details_ExtendedRowChangeEventHandler" msprop:Generator_RowDeletedName="Order_Details_ExtendedRowDeleted" msprop:Generator_RowClassName="Order_Details_ExtendedRow" msprop:Generator_UserTableName="Order Details Extended" msprop:Generator_RowEvArgName="Order_Details_ExtendedRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderID" msprop:Generator_ColumnVarNameInTable="columnOrderID" msprop:Generator_ColumnPropNameInRow="OrderID" msprop:Generator_ColumnPropNameInTable="OrderIDColumn" msprop:Generator_UserColumnName="OrderID" type="xs:int" />
+              <xs:element name="ProductID" msprop:Generator_ColumnVarNameInTable="columnProductID" msprop:Generator_ColumnPropNameInRow="ProductID" msprop:Generator_ColumnPropNameInTable="ProductIDColumn" msprop:Generator_UserColumnName="ProductID" type="xs:int" />
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" msprop:Generator_UserColumnName="UnitPrice" type="xs:decimal" />
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:short" />
+              <xs:element name="Discount" msprop:Generator_ColumnVarNameInTable="columnDiscount" msprop:Generator_ColumnPropNameInRow="Discount" msprop:Generator_ColumnPropNameInTable="DiscountColumn" msprop:Generator_UserColumnName="Discount" type="xs:float" />
+              <xs:element name="ExtendedPrice" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExtendedPrice" msprop:Generator_ColumnPropNameInRow="ExtendedPrice" msprop:Generator_ColumnPropNameInTable="ExtendedPriceColumn" msprop:Generator_UserColumnName="ExtendedPrice" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Order_x0020_Subtotals" msprop:Generator_TableClassName="Order_SubtotalsDataTable" msprop:Generator_TableVarName="tableOrder_Subtotals" msprop:Generator_RowChangedName="Order_SubtotalsRowChanged" msprop:Generator_TablePropName="Order_Subtotals" msprop:Generator_RowDeletingName="Order_SubtotalsRowDeleting" msprop:Generator_RowChangingName="Order_SubtotalsRowChanging" msprop:Generator_RowEvHandlerName="Order_SubtotalsRowChangeEventHandler" msprop:Generator_RowDeletedName="Order_SubtotalsRowDeleted" msprop:Generator_RowClassName="Order_SubtotalsRow" msprop:Generator_UserTableName="Order Subtotals" msprop:Generator_RowEvArgName="Order_SubtotalsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderID" msprop:Generator_ColumnVarNameInTable="columnOrderID" msprop:Generator_ColumnPropNameInRow="OrderID" msprop:Generator_ColumnPropNameInTable="OrderIDColumn" msprop:Generator_UserColumnName="OrderID" type="xs:int" />
+              <xs:element name="Subtotal" msprop:Generator_ColumnVarNameInTable="columnSubtotal" msprop:Generator_ColumnPropNameInRow="Subtotal" msprop:Generator_ColumnPropNameInTable="SubtotalColumn" msprop:Generator_UserColumnName="Subtotal" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Orders_x0020_Qry" msprop:Generator_TableClassName="Orders_QryDataTable" msprop:Generator_TableVarName="tableOrders_Qry" msprop:Generator_RowChangedName="Orders_QryRowChanged" msprop:Generator_TablePropName="Orders_Qry" msprop:Generator_RowDeletingName="Orders_QryRowDeleting" msprop:Generator_RowChangingName="Orders_QryRowChanging" msprop:Generator_RowEvHandlerName="Orders_QryRowChangeEventHandler" msprop:Generator_RowDeletedName="Orders_QryRowDeleted" msprop:Generator_RowClassName="Orders_QryRow" msprop:Generator_UserTableName="Orders Qry" msprop:Generator_RowEvArgName="Orders_QryRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderID" msprop:Generator_ColumnVarNameInTable="columnOrderID" msprop:Generator_ColumnPropNameInRow="OrderID" msprop:Generator_ColumnPropNameInTable="OrderIDColumn" msprop:Generator_UserColumnName="OrderID" type="xs:int" />
+              <xs:element name="CustomerID" msprop:Generator_ColumnVarNameInTable="columnCustomerID" msprop:Generator_ColumnPropNameInRow="CustomerID" msprop:Generator_ColumnPropNameInTable="CustomerIDColumn" msprop:Generator_UserColumnName="CustomerID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="OrderDate" msprop:Generator_ColumnVarNameInTable="columnOrderDate" msprop:Generator_ColumnPropNameInRow="OrderDate" msprop:Generator_ColumnPropNameInTable="OrderDateColumn" msprop:Generator_UserColumnName="OrderDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RequiredDate" msprop:Generator_ColumnVarNameInTable="columnRequiredDate" msprop:Generator_ColumnPropNameInRow="RequiredDate" msprop:Generator_ColumnPropNameInTable="RequiredDateColumn" msprop:Generator_UserColumnName="RequiredDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ShippedDate" msprop:Generator_ColumnVarNameInTable="columnShippedDate" msprop:Generator_ColumnPropNameInRow="ShippedDate" msprop:Generator_ColumnPropNameInTable="ShippedDateColumn" msprop:Generator_UserColumnName="ShippedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ShipVia" msprop:Generator_ColumnVarNameInTable="columnShipVia" msprop:Generator_ColumnPropNameInRow="ShipVia" msprop:Generator_ColumnPropNameInTable="ShipViaColumn" msprop:Generator_UserColumnName="ShipVia" type="xs:int" minOccurs="0" />
+              <xs:element name="Freight" msprop:Generator_ColumnVarNameInTable="columnFreight" msprop:Generator_ColumnPropNameInRow="Freight" msprop:Generator_ColumnPropNameInTable="FreightColumn" msprop:Generator_UserColumnName="Freight" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ShipName" msprop:Generator_ColumnVarNameInTable="columnShipName" msprop:Generator_ColumnPropNameInRow="ShipName" msprop:Generator_ColumnPropNameInTable="ShipNameColumn" msprop:Generator_UserColumnName="ShipName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipAddress" msprop:Generator_ColumnVarNameInTable="columnShipAddress" msprop:Generator_ColumnPropNameInRow="ShipAddress" msprop:Generator_ColumnPropNameInTable="ShipAddressColumn" msprop:Generator_UserColumnName="ShipAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipCity" msprop:Generator_ColumnVarNameInTable="columnShipCity" msprop:Generator_ColumnPropNameInRow="ShipCity" msprop:Generator_ColumnPropNameInTable="ShipCityColumn" msprop:Generator_UserColumnName="ShipCity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipRegion" msprop:Generator_ColumnVarNameInTable="columnShipRegion" msprop:Generator_ColumnPropNameInRow="ShipRegion" msprop:Generator_ColumnPropNameInTable="ShipRegionColumn" msprop:Generator_UserColumnName="ShipRegion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipPostalCode" msprop:Generator_ColumnVarNameInTable="columnShipPostalCode" msprop:Generator_ColumnPropNameInRow="ShipPostalCode" msprop:Generator_ColumnPropNameInTable="ShipPostalCodeColumn" msprop:Generator_UserColumnName="ShipPostalCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipCountry" msprop:Generator_ColumnVarNameInTable="columnShipCountry" msprop:Generator_ColumnPropNameInRow="ShipCountry" msprop:Generator_ColumnPropNameInTable="ShipCountryColumn" msprop:Generator_UserColumnName="ShipCountry" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_UserColumnName="City" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Region" msprop:Generator_ColumnVarNameInTable="columnRegion" msprop:Generator_ColumnPropNameInRow="Region" msprop:Generator_ColumnPropNameInTable="RegionColumn" msprop:Generator_UserColumnName="Region" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PostalCode" msprop:Generator_ColumnVarNameInTable="columnPostalCode" msprop:Generator_ColumnPropNameInRow="PostalCode" msprop:Generator_ColumnPropNameInTable="PostalCodeColumn" msprop:Generator_UserColumnName="PostalCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_UserColumnName="Country" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Product_x0020_Sales_x0020_for_x0020_1997" msprop:Generator_TableClassName="Product_Sales_for_1997DataTable" msprop:Generator_TableVarName="tableProduct_Sales_for_1997" msprop:Generator_RowChangedName="Product_Sales_for_1997RowChanged" msprop:Generator_TablePropName="Product_Sales_for_1997" msprop:Generator_RowDeletingName="Product_Sales_for_1997RowDeleting" msprop:Generator_RowChangingName="Product_Sales_for_1997RowChanging" msprop:Generator_RowEvHandlerName="Product_Sales_for_1997RowChangeEventHandler" msprop:Generator_RowDeletedName="Product_Sales_for_1997RowDeleted" msprop:Generator_RowClassName="Product_Sales_for_1997Row" msprop:Generator_UserTableName="Product Sales for 1997" msprop:Generator_RowEvArgName="Product_Sales_for_1997RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CategoryName" msprop:Generator_ColumnVarNameInTable="columnCategoryName" msprop:Generator_ColumnPropNameInRow="CategoryName" msprop:Generator_ColumnPropNameInTable="CategoryNameColumn" msprop:Generator_UserColumnName="CategoryName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductSales" msprop:Generator_ColumnVarNameInTable="columnProductSales" msprop:Generator_ColumnPropNameInRow="ProductSales" msprop:Generator_ColumnPropNameInTable="ProductSalesColumn" msprop:Generator_UserColumnName="ProductSales" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Products_x0020_Above_x0020_Average_x0020_Price" msprop:Generator_TableClassName="Products_Above_Average_PriceDataTable" msprop:Generator_TableVarName="tableProducts_Above_Average_Price" msprop:Generator_RowChangedName="Products_Above_Average_PriceRowChanged" msprop:Generator_TablePropName="Products_Above_Average_Price" msprop:Generator_RowDeletingName="Products_Above_Average_PriceRowDeleting" msprop:Generator_RowChangingName="Products_Above_Average_PriceRowChanging" msprop:Generator_RowEvHandlerName="Products_Above_Average_PriceRowChangeEventHandler" msprop:Generator_RowDeletedName="Products_Above_Average_PriceRowDeleted" msprop:Generator_RowClassName="Products_Above_Average_PriceRow" msprop:Generator_UserTableName="Products Above Average Price" msprop:Generator_RowEvArgName="Products_Above_Average_PriceRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" msprop:Generator_UserColumnName="UnitPrice" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Products_x0020_by_x0020_Category" msprop:Generator_TableClassName="Products_by_CategoryDataTable" msprop:Generator_TableVarName="tableProducts_by_Category" msprop:Generator_RowChangedName="Products_by_CategoryRowChanged" msprop:Generator_TablePropName="Products_by_Category" msprop:Generator_RowDeletingName="Products_by_CategoryRowDeleting" msprop:Generator_RowChangingName="Products_by_CategoryRowChanging" msprop:Generator_RowEvHandlerName="Products_by_CategoryRowChangeEventHandler" msprop:Generator_RowDeletedName="Products_by_CategoryRowDeleted" msprop:Generator_RowClassName="Products_by_CategoryRow" msprop:Generator_UserTableName="Products by Category" msprop:Generator_RowEvArgName="Products_by_CategoryRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CategoryName" msprop:Generator_ColumnVarNameInTable="columnCategoryName" msprop:Generator_ColumnPropNameInRow="CategoryName" msprop:Generator_ColumnPropNameInTable="CategoryNameColumn" msprop:Generator_UserColumnName="CategoryName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QuantityPerUnit" msprop:Generator_ColumnVarNameInTable="columnQuantityPerUnit" msprop:Generator_ColumnPropNameInRow="QuantityPerUnit" msprop:Generator_ColumnPropNameInTable="QuantityPerUnitColumn" msprop:Generator_UserColumnName="QuantityPerUnit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UnitsInStock" msprop:Generator_ColumnVarNameInTable="columnUnitsInStock" msprop:Generator_ColumnPropNameInRow="UnitsInStock" msprop:Generator_ColumnPropNameInTable="UnitsInStockColumn" msprop:Generator_UserColumnName="UnitsInStock" type="xs:short" minOccurs="0" />
+              <xs:element name="Discontinued" msprop:Generator_ColumnVarNameInTable="columnDiscontinued" msprop:Generator_ColumnPropNameInRow="Discontinued" msprop:Generator_ColumnPropNameInTable="DiscontinuedColumn" msprop:Generator_UserColumnName="Discontinued" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Quarterly_x0020_Orders" msprop:Generator_TableClassName="Quarterly_OrdersDataTable" msprop:Generator_TableVarName="tableQuarterly_Orders" msprop:Generator_RowChangedName="Quarterly_OrdersRowChanged" msprop:Generator_TablePropName="Quarterly_Orders" msprop:Generator_RowDeletingName="Quarterly_OrdersRowDeleting" msprop:Generator_RowChangingName="Quarterly_OrdersRowChanging" msprop:Generator_RowEvHandlerName="Quarterly_OrdersRowChangeEventHandler" msprop:Generator_RowDeletedName="Quarterly_OrdersRowDeleted" msprop:Generator_RowClassName="Quarterly_OrdersRow" msprop:Generator_UserTableName="Quarterly Orders" msprop:Generator_RowEvArgName="Quarterly_OrdersRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerID" msprop:Generator_ColumnVarNameInTable="columnCustomerID" msprop:Generator_ColumnPropNameInRow="CustomerID" msprop:Generator_ColumnPropNameInTable="CustomerIDColumn" msprop:Generator_UserColumnName="CustomerID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_UserColumnName="City" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnPropNameInTable="CountryColumn" msprop:Generator_UserColumnName="Country" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Sales_x0020_by_x0020_Category" msprop:Generator_TableClassName="Sales_by_CategoryDataTable" msprop:Generator_TableVarName="tableSales_by_Category" msprop:Generator_RowChangedName="Sales_by_CategoryRowChanged" msprop:Generator_TablePropName="Sales_by_Category" msprop:Generator_RowDeletingName="Sales_by_CategoryRowDeleting" msprop:Generator_RowChangingName="Sales_by_CategoryRowChanging" msprop:Generator_RowEvHandlerName="Sales_by_CategoryRowChangeEventHandler" msprop:Generator_RowDeletedName="Sales_by_CategoryRowDeleted" msprop:Generator_RowClassName="Sales_by_CategoryRow" msprop:Generator_UserTableName="Sales by Category" msprop:Generator_RowEvArgName="Sales_by_CategoryRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CategoryID" msprop:Generator_ColumnVarNameInTable="columnCategoryID" msprop:Generator_ColumnPropNameInRow="CategoryID" msprop:Generator_ColumnPropNameInTable="CategoryIDColumn" msprop:Generator_UserColumnName="CategoryID" type="xs:int" />
+              <xs:element name="CategoryName" msprop:Generator_ColumnVarNameInTable="columnCategoryName" msprop:Generator_ColumnPropNameInRow="CategoryName" msprop:Generator_ColumnPropNameInTable="CategoryNameColumn" msprop:Generator_UserColumnName="CategoryName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductSales" msprop:Generator_ColumnVarNameInTable="columnProductSales" msprop:Generator_ColumnPropNameInRow="ProductSales" msprop:Generator_ColumnPropNameInTable="ProductSalesColumn" msprop:Generator_UserColumnName="ProductSales" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Sales_x0020_Totals_x0020_by_x0020_Amount" msprop:Generator_TableClassName="Sales_Totals_by_AmountDataTable" msprop:Generator_TableVarName="tableSales_Totals_by_Amount" msprop:Generator_RowChangedName="Sales_Totals_by_AmountRowChanged" msprop:Generator_TablePropName="Sales_Totals_by_Amount" msprop:Generator_RowDeletingName="Sales_Totals_by_AmountRowDeleting" msprop:Generator_RowChangingName="Sales_Totals_by_AmountRowChanging" msprop:Generator_RowEvHandlerName="Sales_Totals_by_AmountRowChangeEventHandler" msprop:Generator_RowDeletedName="Sales_Totals_by_AmountRowDeleted" msprop:Generator_RowClassName="Sales_Totals_by_AmountRow" msprop:Generator_UserTableName="Sales Totals by Amount" msprop:Generator_RowEvArgName="Sales_Totals_by_AmountRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SaleAmount" msprop:Generator_ColumnVarNameInTable="columnSaleAmount" msprop:Generator_ColumnPropNameInRow="SaleAmount" msprop:Generator_ColumnPropNameInTable="SaleAmountColumn" msprop:Generator_UserColumnName="SaleAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OrderID" msprop:Generator_ColumnVarNameInTable="columnOrderID" msprop:Generator_ColumnPropNameInRow="OrderID" msprop:Generator_ColumnPropNameInTable="OrderIDColumn" msprop:Generator_UserColumnName="OrderID" type="xs:int" />
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShippedDate" msprop:Generator_ColumnVarNameInTable="columnShippedDate" msprop:Generator_ColumnPropNameInRow="ShippedDate" msprop:Generator_ColumnPropNameInTable="ShippedDateColumn" msprop:Generator_UserColumnName="ShippedDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Summary_x0020_of_x0020_Sales_x0020_by_x0020_Quarter" msprop:Generator_TableClassName="Summary_of_Sales_by_QuarterDataTable" msprop:Generator_TableVarName="tableSummary_of_Sales_by_Quarter" msprop:Generator_RowChangedName="Summary_of_Sales_by_QuarterRowChanged" msprop:Generator_TablePropName="Summary_of_Sales_by_Quarter" msprop:Generator_RowDeletingName="Summary_of_Sales_by_QuarterRowDeleting" msprop:Generator_RowChangingName="Summary_of_Sales_by_QuarterRowChanging" msprop:Generator_RowEvHandlerName="Summary_of_Sales_by_QuarterRowChangeEventHandler" msprop:Generator_RowDeletedName="Summary_of_Sales_by_QuarterRowDeleted" msprop:Generator_RowClassName="Summary_of_Sales_by_QuarterRow" msprop:Generator_UserTableName="Summary of Sales by Quarter" msprop:Generator_RowEvArgName="Summary_of_Sales_by_QuarterRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ShippedDate" msprop:Generator_ColumnVarNameInTable="columnShippedDate" msprop:Generator_ColumnPropNameInRow="ShippedDate" msprop:Generator_ColumnPropNameInTable="ShippedDateColumn" msprop:Generator_UserColumnName="ShippedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OrderID" msprop:Generator_ColumnVarNameInTable="columnOrderID" msprop:Generator_ColumnPropNameInRow="OrderID" msprop:Generator_ColumnPropNameInTable="OrderIDColumn" msprop:Generator_UserColumnName="OrderID" type="xs:int" />
+              <xs:element name="Subtotal" msprop:Generator_ColumnVarNameInTable="columnSubtotal" msprop:Generator_ColumnPropNameInRow="Subtotal" msprop:Generator_ColumnPropNameInTable="SubtotalColumn" msprop:Generator_UserColumnName="Subtotal" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Summary_x0020_of_x0020_Sales_x0020_by_x0020_Year" msprop:Generator_TableClassName="Summary_of_Sales_by_YearDataTable" msprop:Generator_TableVarName="tableSummary_of_Sales_by_Year" msprop:Generator_RowChangedName="Summary_of_Sales_by_YearRowChanged" msprop:Generator_TablePropName="Summary_of_Sales_by_Year" msprop:Generator_RowDeletingName="Summary_of_Sales_by_YearRowDeleting" msprop:Generator_RowChangingName="Summary_of_Sales_by_YearRowChanging" msprop:Generator_RowEvHandlerName="Summary_of_Sales_by_YearRowChangeEventHandler" msprop:Generator_RowDeletedName="Summary_of_Sales_by_YearRowDeleted" msprop:Generator_RowClassName="Summary_of_Sales_by_YearRow" msprop:Generator_UserTableName="Summary of Sales by Year" msprop:Generator_RowEvArgName="Summary_of_Sales_by_YearRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ShippedDate" msprop:Generator_ColumnVarNameInTable="columnShippedDate" msprop:Generator_ColumnPropNameInRow="ShippedDate" msprop:Generator_ColumnPropNameInTable="ShippedDateColumn" msprop:Generator_UserColumnName="ShippedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OrderID" msprop:Generator_ColumnVarNameInTable="columnOrderID" msprop:Generator_ColumnPropNameInRow="OrderID" msprop:Generator_ColumnPropNameInTable="OrderIDColumn" msprop:Generator_UserColumnName="OrderID" type="xs:int" />
+              <xs:element name="Subtotal" msprop:Generator_ColumnVarNameInTable="columnSubtotal" msprop:Generator_ColumnPropNameInRow="Subtotal" msprop:Generator_ColumnPropNameInTable="SubtotalColumn" msprop:Generator_UserColumnName="Subtotal" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Order_x0020_Details" msprop:Generator_TableClassName="Order_DetailsDataTable" msprop:Generator_TableVarName="tableOrder_Details" msprop:Generator_TablePropName="Order_Details" msprop:Generator_RowDeletingName="Order_DetailsRowDeleting" msprop:Generator_RowChangingName="Order_DetailsRowChanging" msprop:Generator_RowEvHandlerName="Order_DetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="Order_DetailsRowDeleted" msprop:Generator_UserTableName="Order Details" msprop:Generator_RowChangedName="Order_DetailsRowChanged" msprop:Generator_RowEvArgName="Order_DetailsRowChangeEvent" msprop:Generator_RowClassName="Order_DetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderID" msprop:Generator_ColumnVarNameInTable="columnOrderID" msprop:Generator_ColumnPropNameInRow="OrderID" msprop:Generator_ColumnPropNameInTable="OrderIDColumn" msprop:Generator_UserColumnName="OrderID" type="xs:int" />
+              <xs:element name="ProductID" msprop:Generator_ColumnVarNameInTable="columnProductID" msprop:Generator_ColumnPropNameInRow="ProductID" msprop:Generator_ColumnPropNameInTable="ProductIDColumn" msprop:Generator_UserColumnName="ProductID" type="xs:int" />
+              <xs:element name="UnitPrice" msprop:Generator_ColumnVarNameInTable="columnUnitPrice" msprop:Generator_ColumnPropNameInRow="UnitPrice" msprop:Generator_ColumnPropNameInTable="UnitPriceColumn" msprop:Generator_UserColumnName="UnitPrice" type="xs:decimal" />
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" type="xs:short" />
+              <xs:element name="Discount" msprop:Generator_ColumnVarNameInTable="columnDiscount" msprop:Generator_ColumnPropNameInRow="Discount" msprop:Generator_ColumnPropNameInTable="DiscountColumn" msprop:Generator_UserColumnName="Discount" type="xs:float" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Orders" msprop:Generator_TableClassName="OrdersDataTable" msprop:Generator_TableVarName="tableOrders" msprop:Generator_TablePropName="Orders" msprop:Generator_RowDeletingName="OrdersRowDeleting" msprop:Generator_RowChangingName="OrdersRowChanging" msprop:Generator_RowEvHandlerName="OrdersRowChangeEventHandler" msprop:Generator_RowDeletedName="OrdersRowDeleted" msprop:Generator_UserTableName="Orders" msprop:Generator_RowChangedName="OrdersRowChanged" msprop:Generator_RowEvArgName="OrdersRowChangeEvent" msprop:Generator_RowClassName="OrdersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnOrderID" msprop:Generator_ColumnPropNameInRow="OrderID" msprop:Generator_ColumnPropNameInTable="OrderIDColumn" msprop:Generator_UserColumnName="OrderID" type="xs:int" />
+              <xs:element name="CustomerID" msprop:Generator_ColumnVarNameInTable="columnCustomerID" msprop:Generator_ColumnPropNameInRow="CustomerID" msprop:Generator_ColumnPropNameInTable="CustomerIDColumn" msprop:Generator_UserColumnName="CustomerID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" type="xs:int" minOccurs="0" />
+              <xs:element name="OrderDate" msprop:Generator_ColumnVarNameInTable="columnOrderDate" msprop:Generator_ColumnPropNameInRow="OrderDate" msprop:Generator_ColumnPropNameInTable="OrderDateColumn" msprop:Generator_UserColumnName="OrderDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RequiredDate" msprop:Generator_ColumnVarNameInTable="columnRequiredDate" msprop:Generator_ColumnPropNameInRow="RequiredDate" msprop:Generator_ColumnPropNameInTable="RequiredDateColumn" msprop:Generator_UserColumnName="RequiredDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ShippedDate" msprop:Generator_ColumnVarNameInTable="columnShippedDate" msprop:Generator_ColumnPropNameInRow="ShippedDate" msprop:Generator_ColumnPropNameInTable="ShippedDateColumn" msprop:Generator_UserColumnName="ShippedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ShipVia" msprop:Generator_ColumnVarNameInTable="columnShipVia" msprop:Generator_ColumnPropNameInRow="ShipVia" msprop:Generator_ColumnPropNameInTable="ShipViaColumn" msprop:Generator_UserColumnName="ShipVia" type="xs:int" minOccurs="0" />
+              <xs:element name="Freight" msprop:Generator_ColumnVarNameInTable="columnFreight" msprop:Generator_ColumnPropNameInRow="Freight" msprop:Generator_ColumnPropNameInTable="FreightColumn" msprop:Generator_UserColumnName="Freight" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ShipName" msprop:Generator_ColumnVarNameInTable="columnShipName" msprop:Generator_ColumnPropNameInRow="ShipName" msprop:Generator_ColumnPropNameInTable="ShipNameColumn" msprop:Generator_UserColumnName="ShipName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipAddress" msprop:Generator_ColumnVarNameInTable="columnShipAddress" msprop:Generator_ColumnPropNameInRow="ShipAddress" msprop:Generator_ColumnPropNameInTable="ShipAddressColumn" msprop:Generator_UserColumnName="ShipAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipCity" msprop:Generator_ColumnVarNameInTable="columnShipCity" msprop:Generator_ColumnPropNameInRow="ShipCity" msprop:Generator_ColumnPropNameInTable="ShipCityColumn" msprop:Generator_UserColumnName="ShipCity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipRegion" msprop:Generator_ColumnVarNameInTable="columnShipRegion" msprop:Generator_ColumnPropNameInRow="ShipRegion" msprop:Generator_ColumnPropNameInTable="ShipRegionColumn" msprop:Generator_UserColumnName="ShipRegion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipPostalCode" msprop:Generator_ColumnVarNameInTable="columnShipPostalCode" msprop:Generator_ColumnPropNameInRow="ShipPostalCode" msprop:Generator_ColumnPropNameInTable="ShipPostalCodeColumn" msprop:Generator_UserColumnName="ShipPostalCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipCountry" msprop:Generator_ColumnVarNameInTable="columnShipCountry" msprop:Generator_ColumnPropNameInRow="ShipCountry" msprop:Generator_ColumnPropNameInTable="ShipCountryColumn" msprop:Generator_UserColumnName="ShipCountry" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Alphabetical_x0020_list_x0020_of_x0020_products" />
+      <xs:field xpath="mstns:ProductID" />
+    </xs:unique>
+    <xs:unique name="Current_x0020_Product_x0020_List_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Current_x0020_Product_x0020_List" />
+      <xs:field xpath="mstns:ProductID" />
+    </xs:unique>
+    <xs:unique name="Order_x0020_Details_x0020_Extended_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Order_x0020_Details_x0020_Extended" />
+      <xs:field xpath="mstns:OrderID" />
+      <xs:field xpath="mstns:ProductID" />
+    </xs:unique>
+    <xs:unique name="Orders_x0020_Qry_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Orders_x0020_Qry" />
+      <xs:field xpath="mstns:OrderID" />
+    </xs:unique>
+    <xs:unique name="Quarterly_x0020_Orders_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:Quarterly_x0020_Orders" />
+      <xs:field xpath="mstns:CustomerID" />
+    </xs:unique>
+    <xs:unique name="Sales_x0020_by_x0020_Category_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Sales_x0020_by_x0020_Category" />
+      <xs:field xpath="mstns:CategoryID" />
+    </xs:unique>
+    <xs:unique name="Sales_x0020_Totals_x0020_by_x0020_Amount_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Sales_x0020_Totals_x0020_by_x0020_Amount" />
+      <xs:field xpath="mstns:OrderID" />
+    </xs:unique>
+    <xs:unique name="Summary_x0020_of_x0020_Sales_x0020_by_x0020_Quarter_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Summary_x0020_of_x0020_Sales_x0020_by_x0020_Quarter" />
+      <xs:field xpath="mstns:OrderID" />
+    </xs:unique>
+    <xs:unique name="Summary_x0020_of_x0020_Sales_x0020_by_x0020_Year_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Summary_x0020_of_x0020_Sales_x0020_by_x0020_Year" />
+      <xs:field xpath="mstns:OrderID" />
+    </xs:unique>
+    <xs:unique name="Order_x0020_Details_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Order_x0020_Details" />
+      <xs:field xpath="mstns:OrderID" />
+      <xs:field xpath="mstns:ProductID" />
+    </xs:unique>
+    <xs:unique name="Orders_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Orders" />
+      <xs:field xpath="mstns:OrderID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Order_Details_Orders" msdata:parent="Orders" msdata:child="Order_x0020_Details" msdata:parentkey="OrderID" msdata:childkey="OrderID" msprop:Generator_UserChildTable="Order Details" msprop:Generator_ChildPropName="GetOrder_DetailsRows" msprop:Generator_UserRelationName="FK_Order_Details_Orders" msprop:Generator_RelationVarName="relationFK_Order_Details_Orders" msprop:Generator_UserParentTable="Orders" msprop:Generator_ParentPropName="OrdersRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
